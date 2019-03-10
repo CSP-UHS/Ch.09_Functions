@@ -27,6 +27,7 @@ Also, while there is a min function built into Python, don't use it.
 Please use if statements and practice creating it yourself.
 '''
 def min(a,b,c):
+    '''returns smallest number'''
     if a <= b:
         d = a
     else:
