@@ -10,3 +10,11 @@ in the Fibonacci sequence. Pass the number into the function.
 Just to do a quick review of text formatting in the last chapter, make the list of numbers
 right-justified with commas.
 '''
+
+def fibonacci(max):
+    a = [1,1]
+    for i in range(max):
+        b = a[i] + a[i+1]
+        a.append(b)
+        print(f"{a[len(a)-1]:50,}")
+fibonacci(100)
