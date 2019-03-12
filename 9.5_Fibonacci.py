@@ -16,5 +16,5 @@ def fibonacci(max):
     for i in range(max):
         b = a[i] + a[i+1]
         a.append(b)
-        print(f"{a[len(a)-1]:50,}")
+        print(f"{a[len(a)-1]:28,}")
 fibonacci(100)
