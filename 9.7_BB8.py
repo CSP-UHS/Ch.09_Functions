@@ -26,7 +26,12 @@ def draw_BB8(x,y, radius):
     arcade.draw_circle_outline(x, y, radius/2, arcade.color.BLACK)
     arcade.draw_circle_filled(x, y, radius /4, arcade.color.LIGHT_GRAY)
     arcade.draw_circle_outline(x, y, radius /4, arcade.color.BLACK)
-    arcade.draw_arc_filled(x,y+radius,10,5,arcade.color.WHITE,0,180)
+    arcade.draw_arc_filled(x,y+radius,radius/1.5,radius/1.5,arcade.color.WHITE,0,180)
+    arcade.draw_arc_outline(x, y + radius, radius / 1.5, radius / 1.5, arcade.color.BLACK, 0, 180)
+    arcade.draw_line(x-(radius/1.48),y+radius,x+(radius/1.48),y+radius,arcade.color.BLACK)
+    arcade.draw_circle_filled(x,y+radius*1.3,radius/6,arcade.color.BLUE_BELL)
+    arcade.draw_circle_outline(x,y+radius*1.3,radius/6,arcade.color.BLACK)
+
 # The main function where we set background color, start and finish rendering and run.
 def main():
     arcade.set_background_color(arcade.color.WHEAT)
