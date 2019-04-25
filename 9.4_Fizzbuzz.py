@@ -34,19 +34,28 @@ fizzbuzz
 
 The classic test is to use the numbers 1-100 so make sure you test that with your function.
 '''
-threes = 3
-fives = 5
 
-def three(t):
-    print("fizz")
-    threes += 3
-
-def five(f):
 
 def fizzbuzz(a):
-    for b in range(a):
-        if b == threes:
-            three(b)
-        elif b == fives:
-            five(b)
-fizzbuzz(30)
+    x = 0
+    t = 3
+    f = 5
+    ft = 15
+    for y in range(a):
+        x += 1
+        if x == ft:
+            print("fizzbuzz")
+            ft += 15
+            f += 5
+            t += 3
+        elif x == f:
+            print("buzz")
+            f += 5
+        elif x == t:
+            print("fizz")
+            t += 3
+        else:
+            print(x)
+
+
+fizzbuzz(100)
