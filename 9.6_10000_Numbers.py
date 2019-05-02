@@ -19,11 +19,16 @@ OUTPUT
 ------
 [2,5,1,6,3] #something like this 
 '''
+import random
+def create_list(a):
+    b = []
+    for item in range(a):
+        b.append(random.randint(1, 6))
+    return b
 
-
-
-
-
+my_list = create_list(5)
+print(my_list)
+print()
 
 '''
 Function #2: Write a function called count_list that takes
@@ -44,9 +49,19 @@ OUTPUT
 '''
 
 
+def count_list(list, n):
+    x = 0
+    for item in list:
+        if item == n:
+            x += 1
+    count = ('There are', x, 'of', n)
+    return count
 
 
-
+my_list = [1, 2, 3, 3, 3, 4, 2, 1]
+count = count_list(my_list, 3)
+print(count)
+print()
 '''
 Function #3: Write a function called average_list that returns the 
 average of the list passed into it. Once you've finished writing your
@@ -65,9 +80,20 @@ OUTPUT
 '''
 
 
+def average_list(L):
+    x = 0
+    y = 0
+    for item in L:
+        x += item
+        y += 1
+    avg = x / y
+    return avg
 
 
-
+my_list = [1, 2, 3]
+avg = average_list(my_list)
+print(avg)
+print()
 
 
 
@@ -80,5 +106,8 @@ Now that the functions have been created, use them all in a main program that wi
 '''
 
 
-
-
+tklist = create_list(10000)
+count = count_list(tklist, 5)
+print(count)
+avg = average_list(tklist)
+print(avg)
