@@ -9,8 +9,7 @@ def increase(x):
 num = input("Enter a number: ")
 increase(x)
 print("Your number has been increased to", x)
-                        
- 
+
 
 
 #2.) Correct the following code to print 1-10:
