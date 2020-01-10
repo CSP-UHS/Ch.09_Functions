@@ -10,3 +10,17 @@ in the Fibonacci sequence. Pass the number into the function.
 Just to do a quick review of text formatting in the last chapter, make the list of numbers
 right-justified with commas.
 '''
+
+
+def sf(ew):
+    n = 0
+    n2 = 1
+    print(n2)
+    for i in range(ew):
+        total = n2 + n
+        print(total)
+        n = n2
+        n2 = total
+
+
+sf(9)
