@@ -15,10 +15,10 @@ right-justified with commas.
 def sf(ew):
     n = 0
     n2 = 1
-    print(n2)
+    print(f"Number: {n2:3}")
     for i in range(ew):
         total = n2 + n
-        print(total)
+        print(f"Number: {total:3}")
         n = n2
         n2 = total
 
