@@ -31,3 +31,18 @@ oooooooooo
 oooooooooo
 oooooooooo
 '''
+
+def box(height, width):
+    lol = ""
+    height = height + 1
+    for i in range(height):
+        print(lol)
+        lol = ""
+        for i in range(width):
+            lol += "o"
+
+box(7,5) # Print a box 7 high, 5 across
+print() # Blank line
+box(3,2) # Print a box 3 high, 2 across
+print() # Blank line
+box(3,10) # Print a box 3 high, 10 across
