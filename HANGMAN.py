@@ -17,8 +17,11 @@ choice = input("What would you like your word to be?")
 print("\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n")
 
 length = len(choice)
-for i in range(length):
-    letters += "_"
+for i in choice:
+    if i == " ":
+        letters += " "
+    else:
+        letters += "_"
 
 lol = length-1
 
@@ -26,7 +29,6 @@ done = False
 while not done:
     if lose == 0:
         hangman()
-    win = -1
     if lose == 1:
         def hangman():
             print("    ------")
