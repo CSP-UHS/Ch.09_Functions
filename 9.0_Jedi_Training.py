@@ -1,4 +1,4 @@
-#Sign your name:________________
+#Sign your name: Danny Halstead
 
 
 #1.) Correct the following code: (The user's number should be increased by 1 and printed.)
