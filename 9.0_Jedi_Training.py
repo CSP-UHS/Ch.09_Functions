@@ -1,6 +1,6 @@
 #Sign your name: Emma E. Moritz
 
-
+'''
 #1.) Correct the following code: (The user's number should be increased by 1 and printed.)
 
 def increase(x):
@@ -9,19 +9,19 @@ def increase(x):
 num = int(input("Enter a number: "))
 y=increase(num)
 print("Your new number is: "y)
-
 '''
+
 
 #2.) Correct the following code to print 1-10:
 
 def count_to_ten(i):
     for i in range[10]:
         print(i)
- 
-count_to_ten()
+count_to_ten(input())
 
 
 
+'''
 #3.) Correct the following code to sum the list:
 
 def sum_list(list):
