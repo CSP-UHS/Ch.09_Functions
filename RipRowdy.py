@@ -1,8 +1,5 @@
 import math, random
 
-def volume_sphere(radius):
-    '''docstring gang'''
-    volume = 4/3*math.pi*radius**3
-    print(volume)
+def perimeter(base, height):
+    per = 2*base*2*height
 
-volume_sphere(int(input()))
