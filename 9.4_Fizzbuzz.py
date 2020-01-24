@@ -34,3 +34,21 @@ fizzbuzz
 
 The classic test is to use the numbers 1-100 so make sure you test that with your function.
 '''
+def fizzbuzz(endpoint):
+    '''This is the fizzbuzz function'''
+    for i in range (1,endpoint+1):
+        if i%15==0:
+            print("FIZZBUZZ")
+        elif i%5==0:
+            print("BUZZ")
+        elif i%3==0:
+            print("FIZZ")
+        else:
+            print(i)
+
+
+def main():
+    fizzbuzz(100)
+
+if __name__ == "__main__":
+    main()
