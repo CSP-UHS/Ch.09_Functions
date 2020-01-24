@@ -18,7 +18,7 @@ def Fibonacci(endpoint):
         if a > endpoint:
             break
         else:
-            print(a)
+            print(f"{a:>30,}")
             c = a + b
             a = b
             b = c
