@@ -10,3 +10,14 @@ in the Fibonacci sequence. Pass the number into the function.
 Just to do a quick review of text formatting in the last chapter, make the list of numbers
 right-justified with commas.
 '''
+
+def Fibonacci(endpoint):
+    a = 0
+    b = 1
+    for i in range (0,endpoint,1):
+        print(a)
+        c = a + b
+        a = b
+        b = c
+
+Fibonacci(100)

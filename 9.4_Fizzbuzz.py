@@ -38,7 +38,7 @@ The classic test is to use the numbers 1-100 so make sure you test that with you
 def fizz_buzz(endpoint):
     for i in range (1,endpoint,1):
         if i % 15 == 0:
-            print ("FizzBuzz")
+            print ("Fizz Buzz")
         elif i % 5 == 0:
             print ("Buzz")
         elif i % 3 == 0:
