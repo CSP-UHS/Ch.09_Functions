@@ -19,9 +19,12 @@ OUTPUT
 ------
 [2,5,1,6,3] #something like this 
 '''
-
-
-
+import random
+def create_list(list_size):
+    list = []
+    for i in range(list_size):
+        list.append(random.randrange(1,7))
+    return list
 
 
 
@@ -43,7 +46,12 @@ OUTPUT
 3 
 '''
 
-
+def count_list(list, number):
+    count = 0
+    for i in list:
+        if i == number:
+            count+=1
+    return count
 
 
 
@@ -64,9 +72,13 @@ OUTPUT
 2.0
 '''
 
-
-
-
+def average_list(list):
+    length = len(list)
+    sum = 0
+    for i in list:
+        sum+=i
+    average = sum/length
+    return average
 
 
 
@@ -79,6 +91,13 @@ Now that the functions have been created, use them all in a main program that wi
 3.) Print the average of all 10,000 random numbers. (Make sure it's a float) (2 lines of code)
 '''
 
+def main():
+    list = create_list(10000)
+    for i in range(1,7):
+        count = count_list(list,i)
+        print("There are", count, "amount of the number", i)
+    average = average_list(list)
+    print(average)
 
-
+main()
 

@@ -31,3 +31,21 @@ Use a for loop with an index variable and a range.
 Inside the loop use an if statement. This function 
 can be written in about four lines of code.
 '''
+
+def FIND(list, key):
+    position = 0
+    if key not in list:
+        return key
+    for i in list:
+        if i == key:
+            print("Found", key, "at position", position)
+        position+=1
+
+def main():
+    list = [36, 31, 79, 96, 36, 91, 77, 33, 19, 3, 34, 12, 70, 12, 54, 98, 86, 11, 17, 17]
+
+    FIND(list, 12)
+    FIND(list, 91)
+    FIND(list, 80)
+
+main()
