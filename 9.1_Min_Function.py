@@ -26,3 +26,19 @@ The function should return the value, not print the value.
 Also, while there is a min function built into Python, don't use it. 
 Please use if statements and practice creating it yourself.
 '''
+def min(A,B,C):
+    '''This function will pint the smallest of the 3 given numbers'''
+    if A<B and A<C:
+        return A
+    elif B<A and B<C:
+        return B
+    elif C<A and C<B:
+        return C
+    else:
+
+
+def nummin():
+    min(7,3,5)
+
+if __name__ == "__main__":
+    nummin()
