@@ -34,11 +34,15 @@ def min(A,B,C):
         return B
     elif C<A and C<B:
         return C
-    else:
-
+    elif A==B and A<C:
+        return A
+    elif B==C and B<A:
+        return B
+    elif C == A and C < B:
+        return C
 
 def nummin():
-    min(7,3,5)
+    print(min(-100,-2,-5))
 
 if __name__ == "__main__":
     nummin()

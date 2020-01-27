@@ -31,3 +31,11 @@ oooooooooo
 oooooooooo
 oooooooooo
 '''
+def box(h,w):
+    for i in range(h):
+        print("o"*w)
+
+def main():
+    box(3,4)
+if __name__ == "__main__":
+    main()

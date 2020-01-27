@@ -9,32 +9,28 @@ def increase(x):
 num = int(input("Enter a number: "))
 y=increase(num)
 print("Your new number is: "y)
-'''
+
 
 
 #2.) Correct the following code to print 1-10:
 
 def count_to_ten(i):
-    for i in range[10]:
+    for i in range(1,11):
         print(i)
-count_to_ten(input())
+count_to_ten(10)
 
 
 
-'''
+
 #3.) Correct the following code to sum the list:
-
 def sum_list(list):
+    sum=0
     for i in list:
-        sum = i
-        return sum
- 
+        sum += i
+    return sum
 list = [45, 2, 10, -5, 100]
 print(sum_list(list))
-
-
-
-
+'''
 #4.) Correct the following code which should reverse the sentence that is entered.
 
 def reverse(text):
@@ -48,7 +44,7 @@ text = input("Enter a sentence: ")
 print(reverse(text))
 
 
-
+'''
 #5.) Correct the following code: (if one of the options is not entered it should print the statements)
 
 def get_user_choice():
