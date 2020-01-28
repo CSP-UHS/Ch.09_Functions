@@ -28,17 +28,11 @@ Please use if statements and practice creating it yourself.
 '''
 
 def min(a,b,c):
-    if a==b and a<c:
+    if a<=b and a<=c:
         return a
-    elif a==c and a<b:
-        return a
-    elif b==c and b<a:
+    elif b<=a and b<=c:
         return b
-    elif a<b and a<c:
-        return a
-    elif b<a and b<c:
-        return b
-    elif c<a and c<a:
+    else:
         return c
 
 def main():
