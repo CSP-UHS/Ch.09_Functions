@@ -28,17 +28,11 @@ Please use if statements and practice creating it yourself.
 '''
 def min(A,B,C):
     '''This function will pint the smallest of the 3 given numbers'''
-    if A<B and A<C:
+    if A<=B and A<=C:
         return A
-    elif B<A and B<C:
+    elif B<=A and B<=C:
         return B
-    elif C<A and C<B:
-        return C
-    elif A==B and A<C:
-        return A
-    elif B==C and B<A:
-        return B
-    elif C == A and C < B:
+    else:
         return C
 
 def nummin():
