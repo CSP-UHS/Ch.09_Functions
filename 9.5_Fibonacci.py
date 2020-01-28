@@ -22,5 +22,8 @@ def sf(ew):
         n = n2
         n2 = total
 
+def main():
+    sf(9)
 
-sf(9)
+if __name__ == "__main__":
+    main()
