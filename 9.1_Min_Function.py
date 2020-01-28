@@ -26,3 +26,17 @@ The function should return the value, not print the value.
 Also, while there is a min function built into Python, don't use it. 
 Please use if statements and practice creating it yourself.
 '''
+
+def min(first, second, third):
+    if first < second and first < third:
+        return first
+    elif second < first and second < third:
+        return second
+    elif third < first and third < second:
+        return third
+
+print(min(7, 3, 5))
+print(min(5, 5, 4))
+print(min(2, 2, 3))
+print(min(-2, -6, -100))
+print(min("Z", "B", "A"))
