@@ -35,9 +35,9 @@ can be written in about four lines of code.
 list = [36, 31, 79, 96, 36, 91, 77, 33, 19, 3, 34, 12, 70, 12, 54, 98, 86, 11, 17, 17]
 
 def find (list, key):
-    spot = 0
+    spot = -1
     for i in list:
-        spot += 1 #By defining it here the start position is 1 instead of 0 to make it easier to understand.
+        spot += 1
         if i == key:
             print("Found", key, "at position", spot)
 
