@@ -12,17 +12,17 @@ the draw_BB8() function so that the resulting picture looks as close as you can 
 it to the one on the website.
 '''
 
-# Imports arcade module
 import arcade
-
-# Opens a 600px by 600px window and puts BB8 in the title
 arcade.open_window(600, 600, "BB8")
-
-# Function to draw BB8 robots
 def draw_BB8(x,y, radius):
-  
+    arcade.draw_circle_filled(x,y,radius,arcade.color.WHITE)
+    arcade.draw_circle_outline(x,y,radius,arcade.color.BLACK,2)
+    arcade.draw_circle_filled(x,y,radius*0.70, arcade.color.ORANGE)
+    arcade.draw_circle_outline(x, y, radius*.70, arcade.color.BLACK,2)
+    arcade.draw_circle_filled(x,y,radius*0.40,arcade.color.BABY_BLUE)
+    arcade.draw_circle_outline(x, y, radius*0.40, arcade.color.BLACK,2)
 
-# The main function where we set background color, start and finish rendering and run.
+
 def main():
     arcade.set_background_color(arcade.color.WHEAT)
     arcade.start_render()
@@ -36,5 +36,6 @@ def main():
     arcade.finish_render()
     arcade.run()
 
-# Calls the main function
-main()
+
+if __name__== "__main__":
+    main()

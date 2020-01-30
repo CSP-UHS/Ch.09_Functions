@@ -37,7 +37,7 @@ def find(list,key):
     for i in list:
         position+=1
         if i == key:
-            print("This is where in the list you number is: "position)
+            print("This is where in the list you number is: ",position)
 
 def main():
     find()
