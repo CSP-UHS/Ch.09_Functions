@@ -16,11 +16,20 @@ it to the one on the website.
 import arcade
 
 # Opens a 600px by 600px window and puts BB8 in the title
-arcade.open_window(600, 600, "BB8")
+arcade.open_window(600,600,"BB8")
 
 # Function to draw BB8 robots
-def draw_BB8(x,y, radius):
-  
+def draw_BB8(x,y,radius):
+    arcade.draw_circle_outline(x,y,radius*0.75,arcade.color.BLACK,4)
+    arcade.draw_circle_filled(x,y,radius*0.75,arcade.color.WHITE)
+    arcade.draw_circle_outline(x,y,radius*0.5,arcade.color.BLACK,4)
+    arcade.draw_circle_filled(x,y,radius*0.5,arcade.color.ORANGE)
+    arcade.draw_circle_outline(x,y,radius*0.25,arcade.color.BLACK,4)
+    arcade.draw_circle_filled(x,y,radius*0.25,arcade.color.BABY_BLUE_EYES)
+
+    arcade.draw_circle_outline(x,y+radius*1.2,radius*0.15,arcade.color.BLACK,4)
+    arcade.draw_circle_filled(x,y+radius*1.2,radius*0.15,arcade.color.BLUE_GRAY)
+
 
 # The main function where we set background color, start and finish rendering and run.
 def main():
@@ -28,13 +37,14 @@ def main():
     arcade.start_render()
 
     draw_BB8(100,50,50)
-    draw_BB8(300, 300, 30)
-    draw_BB8(500, 100, 20)
-    draw_BB8(500, 400, 60)
-    draw_BB8(120, 500, 15)
+    draw_BB8(300,300,30)
+    draw_BB8(500,100,20)
+    draw_BB8(500,400,60)
+    draw_BB8(120,500,15)
 
     arcade.finish_render()
     arcade.run()
 
 # Calls the main function
-main()
+if __name__ == "__main__":
+    main()
