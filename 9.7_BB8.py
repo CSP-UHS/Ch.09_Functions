@@ -20,6 +20,7 @@ arcade.open_window(600, 600, "BB8")
 
 # Function to draw BB8 robots
 def draw_BB8(x,y, radius):
+
   
 
 # The main function where we set background color, start and finish rendering and run.
@@ -37,4 +38,6 @@ def main():
     arcade.run()
 
 # Calls the main function
-main()
+
+if __name__=="__main__":
+    main()
