@@ -21,7 +21,11 @@ def draw_BB8(x,y, radius):
     arcade.draw_circle_outline(x, y, radius*.70, arcade.color.BLACK,2)
     arcade.draw_circle_filled(x,y,radius*0.40,arcade.color.BABY_BLUE)
     arcade.draw_circle_outline(x, y, radius*0.40, arcade.color.BLACK,2)
-
+    arcade.draw_arc_filled(x,y+radius*0.8,radius*0.85,radius*0.8,arcade.color.WHITE,0,180)
+    arcade.draw_arc_outline(x,y+radius*0.8,radius*0.85,radius*0.8,arcade.color.BLACK,0,180,2)
+    arcade.draw_circle_filled(x,y+radius*1.1,radius*0.20,arcade.color.BLUE)
+    arcade.draw_circle_outline(x,y+radius*1.1,radius*0.20,arcade.color.BLACK,2)
+    arcade.draw_line(x+radius*-0.85,y+radius*0.8,x+radius*0.85,y+radius*0.8,arcade.color.BLACK,2)
 
 def main():
     arcade.set_background_color(arcade.color.WHEAT)
