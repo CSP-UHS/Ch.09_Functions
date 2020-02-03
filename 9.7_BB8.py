@@ -20,15 +20,21 @@ arcade.open_window(600, 600, "BB8")
 
 # Function to draw BB8 robots
 def draw_BB8(x,y, radius):
-    arcade.draw_circle_filled(x,y,radius,arcade.color.WHITE)
-    arcade.draw_circle_outline(x , y, radius, arcade.color.BLACK, 2.5)
-    arcade.draw_circle_filled(x, y, radius/10*6.5, arcade.color.ORANGE)
+    arcade.draw_circle_filled(x, y, radius, arcade.color.WHITE)  # Body + Outline
+    arcade.draw_circle_outline(x, y, radius, arcade.color.BLACK, 2.5)
+
+    arcade.draw_circle_filled(x, y, radius/10*6.5, arcade.color.ORANGE)  # Fist circle + outline
     arcade.draw_circle_outline(x, y, radius/10*6.5, arcade.color.BLACK, 2.5)
-    arcade.draw_circle_filled(x, y, radius / 10 * 3.5, arcade.color.BABY_BLUE)
+
+    arcade.draw_circle_filled(x, y, radius / 10 * 3.5, arcade.color.BABY_BLUE)  # Second circle + outline
     arcade.draw_circle_outline(x, y, radius / 10 * 3.5, arcade.color.BLACK, 2)
-    arcade.draw_arc_filled(x+radius/10 * .2,y+radius,radius, radius, arcade.color.WHITE, 0, 180)
-    arcade.draw_arc_outline(x + radius / 10 * .2, y + radius, radius, radius, arcade.color.BLACK, 0, 180, 2.5)
-    arcade.draw_line(x-radius, y+radius, x+radius, y+radius, arcade.color.BLACK, 2.5)
+
+    arcade.draw_arc_filled(x+radius/10 * .2, y + radius - 5, radius, radius, arcade.color.WHITE, 0, 180)  # White arch + outline
+    arcade.draw_arc_outline(x + radius / 10 * .2, y + radius - 5, radius, radius, arcade.color.BLACK, 0, 180, 2.5)
+    arcade.draw_line(x-radius, y+radius - 5, x+radius, y+radius - 5, arcade.color.BLACK, 2.5)
+
+    arcade.draw_circle_filled(x, y + radius/2*3 - 3.75, radius / 10 * 2.5, arcade.color.BLUE_GRAY)  # Blue circle in arch + outline
+    arcade.draw_circle_outline(x, y + radius/2*3 - 3.75, radius / 10 * 2.5, arcade.color.BLACK, 2.5)
 
 # The main function where we set background color, start and finish rendering and run.
 def main():

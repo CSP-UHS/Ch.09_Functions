@@ -35,7 +35,7 @@ can be written in about four lines of code.
 list = [36, 31, 79, 96, 36, 91, 77, 33, 19, 3, 34, 12, 70, 12, 54, 98, 86, 11, 17, 17]
 
 
-def find(list, key):
+def find(ist, key):
     # pos = 0
     # for i in list:
     #     if i == key:
