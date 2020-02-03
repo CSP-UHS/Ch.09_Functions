@@ -37,4 +37,4 @@ def main():
     arcade.run()
 
 # Calls the main function
-main()
+if __main__
