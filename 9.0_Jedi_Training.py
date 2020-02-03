@@ -15,8 +15,8 @@ print("Your number has been increased to", x)
 
 #2.) Correct the following code to print 1-10:
 
-def count_to_ten:
-    for i in range[10]:
+def count_to_ten():
+    for i in range(1,11,1):
         print(i)
  
 count_to_ten()
@@ -25,10 +25,11 @@ count_to_ten()
 
 #3.) Correct the following code to sum the list:
 
-def sum_list(list):
+def sum_list(list): 
+    sum = 0
     for i in list:
-        sum = i
-        return sum
+        sum +=i
+    return sum
  
 list = [45, 2, 10, -5, 100]
 print(sum_list(list))
@@ -42,7 +43,7 @@ def reverse(text):
     result = ""
     text_length = len(text)
     for i in range(text_length):
-        result = result + text[i * -1]
+        result = result + text[-1 - i]
     return result
  
 text = input("Enter a sentence: ")
