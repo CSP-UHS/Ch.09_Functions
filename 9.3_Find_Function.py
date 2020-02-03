@@ -31,16 +31,17 @@ Use a for loop with an index variable and a range.
 Inside the loop use an if statement. This function 
 can be written in about four lines of code.
 '''
+list = [36, 31, 79, 96, 36, 91, 77, 33, 19, 3, 34, 12, 70, 12, 54, 98, 86, 11, 17, 17]
 def find(list,key):
     '''This function will find where in the list you given number is also known as the position of your number'''
     position=0
     for i in list:
         position+=1
         if i == key:
-            print("This is where in the list you number is: ",position)
+            print("Found",key, "at position",position)
 
 def main():
-    find()
+    find(list,91)
 
 if __name__ == "__main__":
     main()
