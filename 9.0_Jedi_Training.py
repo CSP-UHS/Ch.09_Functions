@@ -3,12 +3,12 @@
 
 #1.) Correct the following code: (The user's number should be increased by 1 and printed.)
 
-def increase(x):
-    return x + 1
+def increase(originol):
+    return originol + 1
  
-num = input("Enter a number: ")
-increase(x)
-print("Your number has been increased to", x)
+users_number = int(input("Enter a number: "))
+newnum= increase(users_number)
+print("Your number has been increased to", newnum)
                         
  
 
@@ -43,7 +43,7 @@ def reverse(text):
     result = ""
     text_length = len(text)
     for i in range(text_length):
-        result = result + text[-1 - i]
+        result = result + text[(i *-1)-1]
     return result
  
 text = input("Enter a sentence: ")
@@ -56,16 +56,15 @@ print(reverse(text))
 def get_user_choice():
     while True:
         command = input("Command: ")
-        if command = f or command = m or command = s or command = d or command = q:
+        if command.lower() == "f" or command.lower() == "m" or command.lower() == "s" or command.lower() == "d" or command.lower() == "q":
             return command
- 
-        print("Hey, that's not a command. Here are your options:" )
-        print("f - Full speed ahead")
-        print("m - Moderate speed")
-        print("s - Status")
-        print("d - Drink")
-        print("q - Quit")
+        else:
+            print("Hey, that's not a command. Here are your options:" )
+            print("f - Full speed ahead")
+            print("m - Moderate speed")
+            print("s - Status")
+            print("d - Drink")
+            print("q - Quit")
  
 user_command = get_user_choice()
 print("You entered:", user_command)
-
