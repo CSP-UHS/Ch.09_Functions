@@ -19,10 +19,21 @@ OUTPUT
 ------
 [2,5,1,6,3] #something like this 
 '''
+import random
 
 
+def create_list (list_size):
+    list = []
+    for i in range(list_size):
+        list.append(random.randrange(1, 7))
+    return list
 
-
+# def main():
+#     my_list = create_list(5)
+#     print(my_list)
+#
+# if __name__== "__main__":
+#     main()
 
 
 '''
@@ -43,8 +54,20 @@ OUTPUT
 3 
 '''
 
+def count_list(list, num):
+    freq = 0
+    for i in list:
+        if i == num:
+            freq+= 1
+    return freq
 
-
+# def main():
+#     my_list = [1, 2, 3, 3, 3, 4, 2, 1]
+#     count = count_list(my_list, 3)
+#     print(count)
+#
+# if __name__ == "__main__":
+#     main()
 
 
 '''
@@ -64,11 +87,17 @@ OUTPUT
 2.0
 '''
 
+def average_list(list):
+    num = 0
+    for item in list:
+        num += item
+    av = num/len(list)
+    return f"{av:.2f}"
 
-
-
-
-
+# def main():
+#     my_list = [1, 2, 3]
+#     avg = average_list(my_list)
+#     print(avg)
 
 
 
@@ -79,6 +108,16 @@ Now that the functions have been created, use them all in a main program that wi
 3.) Print the average of all 10,000 random numbers. (Make sure it's a float) (2 lines of code)
 '''
 
+def main():
+    list = create_list(1000000)
 
+    for i in range(1, 7):
+        print("There are", count_list(list, i), "amount of", i)
+
+    print()
+    print("The average is:  ", average_list(list))
+
+if __name__== "__main__":
+    main()
 
 
