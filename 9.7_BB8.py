@@ -20,16 +20,18 @@ arcade.open_window(600, 600, "BB8")
 
 # Function to draw BB8 robots
 def draw_BB8(x,y, radius):
-    arcade.start_render()
-    arcade.draw_ellipse_filled(x, y, 110, 70, (0, 128, 0))
-    arcade.draw_circle_filled(x, y, radius, (0, 128, 0))
-    arcade.draw_circle_filled(x, y, radius, (0, 128, 0))
-    arcade.draw_circle_filled(x,y, 20, arcade.color.WHITE)
-    arcade.draw_circle_filled(x, y, 20, arcade.color.WHITE)
-    arcade.draw_circle_filled(x, y, 15, arcade.color.BLACK)
-    arcade.draw_circle_filled(x, y, 15, arcade.color.BLACK)
-    arcade.draw_ellipse_filled(x, y, 80, 20, arcade.color.PINK)
-    arcade.draw_ellipse_filled(x, y, 40, 10, arcade.color.CANDY_PINK)
+    arcade.draw_circle_filled(x, y, radius, arcade.color.WHITE)
+    arcade.draw_circle_outline(x, y, radius, arcade.color.BLACK, 2)
+    arcade.draw_circle_filled(x, y, radius * .65, arcade.color.ORANGE)
+    arcade.draw_circle_outline(x, y, radius * .65, arcade.color.BLACK, 1.5)
+    arcade.draw_circle_filled(x, y, radius * .3, arcade.color.BABY_BLUE)
+    arcade.draw_circle_outline(x, y, radius * .3, arcade.color.BLACK, 1)
+    arcade.draw_arc_filled(x, y + (radius * .80), radius * .75, radius * .75, arcade.color.WHITE, 0, 180, 0)
+    arcade.draw_arc_outline(x, y + (radius * .80), radius * .75, radius * .75, arcade.color.BLACK, 0, 180, 2, 0)
+    arcade.draw_line(x - radius * .75, y + radius * .80, x + radius * .75, y + radius * .80, arcade.color.BLACK, 2)
+    arcade.draw_circle_filled(x, y+radius * 1.15, radius * .20, arcade.color.BLUE_GRAY)
+    arcade.draw_circle_outline(x, y+radius * 1.15, radius * .20, arcade.color.BLACK)
+
 
 # The main function where we set background color, start and finish rendering and run.
 def main():
