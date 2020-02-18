@@ -31,3 +31,22 @@ oooooooooo
 oooooooooo
 oooooooooo
 '''
+
+
+def box(height, width):
+    y = "o" * width
+    for i in range(height):
+        print(y)
+
+def main():
+    box(7, 5)
+    print()
+    box(3, 2)
+    print()
+    box(3, 10)
+
+if __name__ == "__main__":
+    main()
+
+
+
