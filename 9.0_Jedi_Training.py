@@ -1,4 +1,4 @@
-#Sign your name:Catherine Clifford
+#Sign your name:Catherine
 
 
 #1.) Correct the following code: (The user's number should be increased by 1 and printed.)
