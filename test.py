@@ -31,13 +31,13 @@ import math
 
 
 
-#
-# def main():
-#     fibo(100)
-#
-# if __name__ == "__main__":
-#     main()
-#
+
+def main():
+    fibo(100)
+
+if __name__ == "__main__":
+    main()
+
 
 
 ###########################################
