@@ -35,7 +35,6 @@ fizzbuzz
 The classic test is to use the numbers 1-100 so make sure you test that with your function.
 '''
 
-import main
 def fizzbuzz(endpoint):
     '''This fizzbuzz function'''
     for i in range(1, endpoint+1):
