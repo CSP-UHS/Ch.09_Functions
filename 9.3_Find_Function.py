@@ -31,3 +31,15 @@ Use a for loop with an index variable and a range.
 Inside the loop use an if statement. This function 
 can be written in about four lines of code.
 '''
+lst = [36, 31, 79, 96, 36, 91, 77, 33, 19, 3, 34, 12, 70, 12, 54, 98, 86, 11, 17, 17]
+
+
+def find(list, number):
+    for i in range(len(list)):
+        if list[i] == number:
+            print(f"Found {number} at position {i}")
+
+
+find(lst, 12)
+find(lst, 91)
+find(lst, 80)
