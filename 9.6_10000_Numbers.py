@@ -12,17 +12,22 @@ following code after it and make sure it works with the function you wrote:
 
 INPUT
 -----
-my_list = create_list(5)
-print(my_list)
+
 
 OUTPUT
 ------
 [2,5,1,6,3] #something like this 
 '''
+import random
 
 
+def create_list(size):
+    lst = random.choices(range(1, 7), k=size)
+    return lst
 
 
+my_list = create_list(5)
+print(my_list)
 
 
 '''
@@ -40,11 +45,21 @@ print(count)
 
 OUTPUT
 ------
-3 
+3  
 '''
 
 
+def count_list(lst, num):
+    total = 0
+    for each in lst:
+        if each == num:
+            total += 1
+    return total
 
+
+my_list = [1, 2, 3, 3, 3, 4, 2, 1]
+count = count_list(my_list, 4)
+print(count)
 
 
 '''
@@ -64,9 +79,18 @@ OUTPUT
 2.0
 '''
 
+def average_list(lst):
+    total = 0
+    for each in lst:
+        total += each
+    avg = total/len(lst)
+    return avg
 
 
 
+my_list = [1,2,3]
+avg = average_list(my_list)
+print(avg)
 
 
 
