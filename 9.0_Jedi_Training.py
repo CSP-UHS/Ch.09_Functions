@@ -3,15 +3,16 @@
 
 #1.) Correct the following code: (The user's number should be increased by 1 and printed.)
 
-def increase(x):
-    return x + 1
+def increase(number):
+    number= (number + 1)
+    return number
  
 num = input("Enter a number: ")
-increase(x)
-print("Your number has been increased to", x)
+number = increase(int(num))
+print("Your number has been increased to", number)
                         
  
-
+'''
 
 #2.) Correct the following code to print 1-10:
 
@@ -68,3 +69,4 @@ def get_user_choice():
 user_command = get_user_choice()
 print("You entered:", user_command)
 
+'''
