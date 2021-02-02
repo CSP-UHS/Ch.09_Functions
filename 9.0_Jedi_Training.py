@@ -1,24 +1,27 @@
 #Sign your name:________________
 
-
+# if __name__ == "__main__":
 #1.) Correct the following code: (The user's number should be increased by 1 and printed.)
 
 def increase(x):
-    return x + 1
- 
-num = input("Enter a number: ")
-increase(x)
-print("Your number has been increased to", x)
+    num = x + 1
+    return num
+
+
+numb = int(input("Enter a number: "))
+num = increase(numb)
+print("Your number has been increased to", num)
                         
  
 
 
 #2.) Correct the following code to print 1-10:
 
-def count_to_ten:
-    for i in range[10]:
+def count_to_ten():
+    for i in range(1, 11):
         print(i)
- 
+
+
 count_to_ten()
 
 
@@ -26,12 +29,16 @@ count_to_ten()
 #3.) Correct the following code to sum the list:
 
 def sum_list(list):
+    sum = 0
     for i in list:
-        sum = i
-        return sum
- 
+        num = i
+        sum += num
+    return sum
+
+
 list = [45, 2, 10, -5, 100]
-print(sum_list(list))
+sum = sum_list(list)
+print(sum)
 
 
 
@@ -42,9 +49,10 @@ def reverse(text):
     result = ""
     text_length = len(text)
     for i in range(text_length):
-        result = result + text[i * -1]
+        result += text[(i+1) * -1]
     return result
- 
+
+
 text = input("Enter a sentence: ")
 print(reverse(text))
 
@@ -55,16 +63,17 @@ print(reverse(text))
 def get_user_choice():
     while True:
         command = input("Command: ")
-        if command = f or command = m or command = s or command = d or command = q:
+        if command == "f" or command == "m" or command == "s" or command == "d" or command == "q":
             return command
- 
-        print("Hey, that's not a command. Here are your options:" )
+
+        print("Hey, that's not a command. Here are your options:")
         print("f - Full speed ahead")
         print("m - Moderate speed")
         print("s - Status")
         print("d - Drink")
         print("q - Quit")
- 
+
+
 user_command = get_user_choice()
 print("You entered:", user_command)
 
