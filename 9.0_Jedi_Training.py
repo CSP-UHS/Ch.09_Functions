@@ -6,8 +6,8 @@
 def increase(x):
     return x + 1
  
-num = input("Enter a number: ")
-increase(x)
+num = int(input("Enter a number: "))
+x=increase(num)
 print("Your number has been increased to", x)
                         
  
