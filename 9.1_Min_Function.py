@@ -26,3 +26,34 @@ The function should return the value, not print the value.
 Also, while there is a min function built into Python, don't use it. 
 Please use if statements and practice creating it yourself.
 '''
+
+
+def min(a, b, c):
+    if type(a) == str:
+        frst = ord(a)
+    else:
+        frst = a
+    if type(b) == str:
+        scnd = ord(b)
+    else:
+        scnd = b
+    if type(c) == str:
+        thrd = ord(c)
+    else:
+        thrd = c
+    if (frst-scnd) <= 0 and (frst-thrd) <= 0:
+        num = a
+        return num
+    elif (scnd-frst) <= 0 and (scnd-thrd) <= 0:
+        num = b
+        return num
+    elif (thrd-frst) <= 0 and (thrd-scnd) <= 0:
+        num = c
+        return num
+
+
+print(min(7, 3, 5))
+print(min(5, 5, 4))
+print(min(2, 2, 3))
+print(min(-2, -6, -100))
+print(min("Z", "B", "A"))
