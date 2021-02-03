@@ -1,13 +1,14 @@
-#Sign your name:________________
+#Sign your name:Gerardo Lopez
 
 
 #1.) Correct the following code: (The user's number should be increased by 1 and printed.)
 
 def increase(x):
-    return x + 1
+    x+=1
+    return x
  
-num = input("Enter a number: ")
-increase(x)
+num = int(input("Enter a number: "))
+x = increase(num)
 print("Your number has been increased to", x)
                         
  
@@ -15,9 +16,9 @@ print("Your number has been increased to", x)
 
 #2.) Correct the following code to print 1-10:
 
-def count_to_ten:
+def count_to_ten():
     for i in range[10]:
-        print(i)
+        print(i+i)
  
 count_to_ten()
 
@@ -44,7 +45,7 @@ def reverse(text):
     for i in range(text_length):
         result = result + text[i * -1]
     return result
- 
+
 text = input("Enter a sentence: ")
 print(reverse(text))
 
@@ -55,9 +56,9 @@ print(reverse(text))
 def get_user_choice():
     while True:
         command = input("Command: ")
-        if command = f or command = m or command = s or command = d or command = q:
+        if command.lower() == "f" or command.lower() == "m" or command.lower() == "s" or command.lower() == "d" or command.lower == "q":
             return command
- 
+        else:
         print("Hey, that's not a command. Here are your options:" )
         print("f - Full speed ahead")
         print("m - Moderate speed")
