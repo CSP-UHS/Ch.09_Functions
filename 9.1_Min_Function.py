@@ -36,11 +36,11 @@ def mini(a,b,c):
         return c
 
 def main():
-    print(min(7, 3, 5))
-    print(min(5, 5, 4))
-    print(min(2, 2, 3))
-    print(min(-2, -6, -100))
-    print(min("Z", "B", "A"))
+    print(mini(7, 3, 5))
+    print(mini(5, 5, 4))
+    print(mini(2, 2, 3))
+    print(mini(-2, -6, -100))
+    print(mini("Z", "B", "A"))
 
 if __name__ == "__main__":
     main()
