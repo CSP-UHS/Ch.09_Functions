@@ -28,7 +28,18 @@ Please use if statements and practice creating it yourself.
 '''
 
 
-def min_max():
-    print('placeholder')
+def mini(x, y, z):
+    if x < y and x < z:
+        minimum = x
+    elif y < x and y < z:
+        minimum = y
+    else:
+        minimum = z
+    return minimum
 
 
+num1 = input('Enter number: ')
+num2 = input('Enter number: ')
+num3 = input('Enter number: ')
+
+print(mini(num1, num2, num3))
