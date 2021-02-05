@@ -65,6 +65,5 @@ def get_user_choice():
         print("q - Quit")
 
 
-user_command = get_user_choice()
-print("You entered:", user_command)
+print("You entered:", get_user_choice())
 
