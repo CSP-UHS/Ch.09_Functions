@@ -34,3 +34,20 @@ fizzbuzz
 
 The classic test is to use the numbers 1-100 so make sure you test that with your function.
 '''
+
+
+def fizzbuzz(max):
+    for i in range(1, max + 1):  # +1 makes sure to include the max (so it will go to 100 instead of 99)
+        if i % 3 == 0 and i % 5 == 0:
+            print('fizzbuzz')
+        elif i % 3 == 0:
+            print('fizz')
+        elif i % 5 == 0:
+            print('buzz')
+        else:
+            print(i)
+
+
+fizzbuzz(100)
+
+# print(3 % 4) == remainder of 3
