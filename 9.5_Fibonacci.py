@@ -16,7 +16,7 @@ def fibonacci(max):
     num = 1
     last_num = 0
     for i in range(max):
-        print(num)
+        print(f"{num:>15,}")
         num += last_num
         last_num = num - last_num
 
