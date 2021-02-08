@@ -31,5 +31,16 @@ oooooooooo
 oooooooooo
 oooooooooo
 '''
+def bocks(h, w):
+    for i in range (h):
+        print("o"*w)
 
-def bock()
+def main():
+    bocks(7,5)
+    print()
+    bocks(3,2)
+    print()
+    bocks(3,10)
+
+if __name__ == "__main__":
+    main()
