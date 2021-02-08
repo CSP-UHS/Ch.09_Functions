@@ -31,3 +31,16 @@ oooooooooo
 oooooooooo
 oooooooooo
 '''
+def box(h,w):
+    for i in range(h):
+        print("o"*w)
+
+def main():
+    box(7,5) #print a box 7 high, 5 across
+    print()
+    box(3,2) #box 3 high, 2 across
+    print()
+    box(3,10) #box 3 hight, 10 across
+
+if __name__ == "__main__":
+    main()
