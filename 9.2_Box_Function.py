@@ -31,3 +31,5 @@ oooooooooo
 oooooooooo
 oooooooooo
 '''
+
+def bock()
