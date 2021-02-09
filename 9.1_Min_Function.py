@@ -28,17 +28,21 @@ Please use if statements and practice creating it yourself.
 '''
 
 
-def min(x, y, z):
-    if x <= y and x<= z:
-        return x
-    elif y <= x and y <= z:
-        return y
-    else:
-        return z
+def program():
+    def min(x, y, z):
+        if x <= y and x <= z:
+            return x
+        elif y <= x and y <= z:
+            return y
+        else:
+            return z
+
+    print(min(7, 3, 5))
+    print(min(5, 5, 4))
+    print(min(2, 2, 3))
+    print(min(-2, -6, -100))
+    print(min("Z", "B", "A"))
 
 
-print(min(7, 3, 5))
-print(min(5, 5, 4))
-print(min(2, 2, 3))
-print(min(-2, -6, -100))
-print(min("Z", "B", "A"))
+if __name__ == "__main__":
+    program()

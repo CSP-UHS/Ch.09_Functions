@@ -11,15 +11,24 @@
 # print("Your number has been increased to", x)
 
 
-def increase(num):
-    global x
-    x = num + 1
-    return x
+# def increase(num):
+#     global x
+#     x = num + 1
+#     return x
+#
+#
+# num = int(input("Enter a number: "))
+# increase(num)
+# print("Your number has been increased to", x)
+
+
+def increase(x):
+    return x + 1
 
 
 num = int(input("Enter a number: "))
 increase(num)
-print("Your number has been increased to", x)
+print("Your number has been increased to", num)
 
 
 # 2.) Correct the following code to print 1-10:
