@@ -10,3 +10,19 @@ in the Fibonacci sequence. Pass the number into the function.
 Just to do a quick review of text formatting in the last chapter, make the list of numbers
 right-justified with commas.
 '''
+
+def fibon(stopint):
+    n1 = 0
+    n2 = 1
+    nc = 0
+    for i in range(stopint):
+        nc = n2 + n1
+        n1 = n2
+        n2 = nc
+        print(f"{nc:30,}")
+
+def main():
+    fibon(100)
+
+if __name__=="__main__":
+    main()
