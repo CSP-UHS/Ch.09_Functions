@@ -19,11 +19,14 @@ OUTPUT
 ------
 [2,5,1,6,3] #something like this 
 '''
+import random
 
 
-
-
-
+def create_list(length):
+    somelist = []
+    for i in range(length):
+        somelist.append(random.randint(1, 6))
+    return somelist
 
 '''
 Function #2: Write a function called count_list that takes
@@ -44,6 +47,12 @@ OUTPUT
 '''
 
 
+def count_list(list, num):
+    summ = 0
+    for i in range(len(list)):
+        if list[i] == num:
+            summ += 1
+    return summ
 
 
 
@@ -65,6 +74,12 @@ OUTPUT
 '''
 
 
+def average_list(list):
+    total = 0
+    for i in range(len(list)):
+        total += list[i]
+    total /= len(list)
+    return total
 
 
 
@@ -80,5 +95,13 @@ Now that the functions have been created, use them all in a main program that wi
 '''
 
 
+def main():
+    mainlist = create_list(1000)
+    for i in range(1, 7):
+        numcount = count_list(mainlist, i)
+        print("There are", numcount, "amount of", i, "'s")
+    print("The average is:", average_list(mainlist))
 
 
+if __name__ == "__main__":
+    main()

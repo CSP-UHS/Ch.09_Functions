@@ -60,10 +60,12 @@ print(reverse(text))
 
 #5.) Correct the following code: (if one of the options is not entered it should print the statements)
 
+
 def get_user_choice():
     while True:
         command = input("Command: ")
-        if command == "f" or command == "m" or command == "s" or command == "d" or command == "q":
+        if command.lower() == "f" or command.lower() == "m" or command.lower() == "s" or command.lower() == "d" or \
+                command.lower() == "q":
             return command
 
         print("Hey, that's not a command. Here are your options:")

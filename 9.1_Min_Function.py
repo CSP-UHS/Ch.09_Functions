@@ -47,13 +47,16 @@ def min(a, b, c):
     elif (scnd-frst) <= 0 and (scnd-thrd) <= 0:
         num = b
         return num
-    elif (thrd-frst) <= 0 and (thrd-scnd) <= 0:
+    else:
         num = c
         return num
 
+def main():
+    print(min(7, 3, 5))
+    print(min(5, 5, 4))
+    print(min(2, 2, 3))
+    print(min(-2, -6, -100))
+    print(min("Z", "B", "A"))
 
-print(min(7, 3, 5))
-print(min(5, 5, 4))
-print(min(2, 2, 3))
-print(min(-2, -6, -100))
-print(min("Z", "B", "A"))
+if __name__ == "__main__":
+    main()
