@@ -10,3 +10,18 @@ in the Fibonacci sequence. Pass the number into the function.
 Just to do a quick review of text formatting in the last chapter, make the list of numbers
 right-justified with commas.
 '''
+
+def fibonacci(endpoint):
+    list=[1,1]
+    while len(list)<endpoint:
+        x = list[-1] + list[-2]
+        print(f"{x:>10d}")
+        list.append(x)
+
+
+def main():
+    fibonacci(100)
+
+
+if __name__=="__main__":
+    main()
