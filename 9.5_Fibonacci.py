@@ -16,9 +16,14 @@ def fibonacci(max):
     num = 1
     last_num = 0
     for i in range(max):
-        print(f"{num:>15,}")
+        print(f"{num:>30,}")
         num += last_num
         last_num = num - last_num
 
 
-fibonacci(50)
+def main():
+    fibonacci(100)
+
+
+if __name__ == "__main__":
+    main()

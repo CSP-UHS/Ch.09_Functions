@@ -38,8 +38,13 @@ def mini(x, y, z):
     return minimum
 
 
-num1 = input('Enter number: ')
-num2 = input('Enter number: ')
-num3 = input('Enter number: ')
+def main():
+    num1 = input('Enter number: ')
+    num2 = input('Enter number: ')
+    num3 = input('Enter number: ')
 
-print(mini(num1, num2, num3))
+    print(mini(num1, num2, num3))
+
+
+if __name__ == "__main__":
+    main()

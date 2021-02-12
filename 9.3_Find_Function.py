@@ -39,8 +39,13 @@ def find(list,num):
             print('Found', num, 'at position', i)
 
 
-list = [36, 31, 79, 96, 36, 91, 77, 33, 19, 3, 34, 12, 70, 12, 54, 98, 86, 11, 17, 17]
+def main():
+    list = [36, 31, 79, 96, 36, 91, 77, 33, 19, 3, 34, 12, 70, 12, 54, 98, 86, 11, 17, 17]
 
-find(list, 12)
-find(list, 91)
-find(list, 80)
+    find(list, 12)
+    find(list, 91)
+    find(list, 80)
+
+
+if __name__ == "__main__":
+    main()

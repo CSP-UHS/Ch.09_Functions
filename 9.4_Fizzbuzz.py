@@ -38,7 +38,7 @@ The classic test is to use the numbers 1-100 so make sure you test that with you
 
 def fizzbuzz(max):
     for i in range(1, max + 1):  # +1 makes sure to include the max (so it will go to 100 instead of 99)
-        if i % 3 == 0 and i % 5 == 0:
+        if i % 3 == 0 and i % 5 == 0:       # print(3 % 4) == remainder of 3
             print('fizzbuzz')
         elif i % 3 == 0:
             print('fizz')
@@ -48,6 +48,9 @@ def fizzbuzz(max):
             print(i)
 
 
-fizzbuzz(100)
+def main():
+    fizzbuzz(100)
 
-# print(3 % 4) == remainder of 3
+
+if __name__ == "__main__":
+    main()
