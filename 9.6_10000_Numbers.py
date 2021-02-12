@@ -1,3 +1,5 @@
+import random
+
 '''
 10,000 NUMBERS
 --------------
@@ -21,8 +23,11 @@ OUTPUT
 '''
 
 
-
-
+def create_list(count):
+    numbers = []
+    for i in range(count):
+        numbers.append(random.randrange(1, 7))
+    return numbers
 
 
 '''
@@ -44,7 +49,12 @@ OUTPUT
 '''
 
 
-
+def count_numbers(list, selected_number):
+    count = 0
+    for i in range(len(list)):
+        if list[i] == selected_number:
+            count += 1
+    return count
 
 
 '''
@@ -80,5 +90,12 @@ Now that the functions have been created, use them all in a main program that wi
 '''
 
 
+def main():
+    final = create_list(10000)
+
+    for i in range(1, 7):
+        print('There are', count_numbers(final, i), 'instances of', i)
 
 
+if __name__ == "__main__":
+    main()
