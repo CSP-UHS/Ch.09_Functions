@@ -20,10 +20,17 @@ OUTPUT
 [2,5,1,6,3] #something like this 
 '''
 
+import random
 
 
+def create_list(num):
+    my_list = []
+    for i in range(num):
+        my_list.append(random.randint(1, 6))
+    return my_list
 
 
+print(create_list(5))
 
 '''
 Function #2: Write a function called count_list that takes
