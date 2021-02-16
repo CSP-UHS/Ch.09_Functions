@@ -97,7 +97,7 @@ def main():
     for i in range(1, 7):       # its only two lines instead of three because I'm just that smart
         print('There are', count_numbers(full_list, i), 'instances of', i)
 
-    print('\nThe average of the list is', average(full_list))
+    print('\nThe average of the list is', average(full_list))  # I shortened it by calling the function while printing
 
 
 if __name__ == "__main__":
