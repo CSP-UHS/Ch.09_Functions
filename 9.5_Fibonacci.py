@@ -12,7 +12,7 @@ right-justified with commas.
 '''
 
 def fibonacci(endpoint):
-    list=[1,1]
+    list=[0,1]
     while len(list)<endpoint:
         x = list[-1] + list[-2]
         print(f"{x:>10d}")
@@ -20,7 +20,7 @@ def fibonacci(endpoint):
 
 
 def main():
-    fibonacci(100)
+    fibonacci(101)
 
 
 if __name__=="__main__":
