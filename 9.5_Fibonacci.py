@@ -12,14 +12,12 @@ right-justified with commas.
 '''
 
 def fibon(stopint):
-    n1 = 0
-    n2 = 1
-    nc = 0
+    n1,n2 = -1,1
     for i in range(stopint):
         nc = n2 + n1
         n1 = n2
         n2 = nc
-        print(f"{nc:30,}")
+        print(f"{nc:>30,}")
 
 def main():
     fibon(100)
