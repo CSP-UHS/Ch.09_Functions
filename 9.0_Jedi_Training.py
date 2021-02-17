@@ -2,22 +2,22 @@
 
 
 #1.) Correct the following code: (The user's number should be increased by 1 and printed.)
+'''
+def increase(x):
+    x+=1
+    return x
 
-def increase(number):
-    number= (number + 1)
-    return number
- 
 num = input("Enter a number: ")
 number = increase(int(num))
 print("Your number has been increased to", number)
                         
  
-'''
+
 
 #2.) Correct the following code to print 1-10:
 
-def count_to_ten:
-    for i in range[10]:
+def count_to_ten():
+    for i in range(1,11):
         print(i)
  
 count_to_ten()
@@ -27,9 +27,10 @@ count_to_ten()
 #3.) Correct the following code to sum the list:
 
 def sum_list(list):
+    sum=0
     for i in list:
-        sum = i
-        return sum
+        sum = i + sum
+    return sum
  
 list = [45, 2, 10, -5, 100]
 print(sum_list(list))
@@ -43,20 +44,20 @@ def reverse(text):
     result = ""
     text_length = len(text)
     for i in range(text_length):
-        result = result + text[i * -1]
+        result = result + text[(i+1) *-1]
     return result
  
 text = input("Enter a sentence: ")
 print(reverse(text))
 
 
-
+'''
 #5.) Correct the following code: (if one of the options is not entered it should print the statements)
 
 def get_user_choice():
     while True:
         command = input("Command: ")
-        if command = f or command = m or command = s or command = d or command = q:
+        if command.lower() == "f" or command.lower() == "m" or command.lower() == "s" or command.lower() == "d" or command.lower() == "q":
             return command
  
         print("Hey, that's not a command. Here are your options:" )
@@ -69,4 +70,3 @@ def get_user_choice():
 user_command = get_user_choice()
 print("You entered:", user_command)
 
-'''
