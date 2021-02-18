@@ -10,3 +10,20 @@ in the Fibonacci sequence. Pass the number into the function.
 Just to do a quick review of text formatting in the last chapter, make the list of numbers
 right-justified with commas.
 '''
+def fibonacci(total):
+    storage = []
+    for i in range(total):
+        if len(storage) == 0 or len(storage) == 1:
+            storage.append(i)
+        else:
+            fib = storage[-1]+storage[-2]
+            storage.append(fib)
+    for object in storage:
+        print(f"{object:<,}")
+
+def main():
+    fibonacci(100)
+
+
+if __name__ == "__main__":
+    main()
