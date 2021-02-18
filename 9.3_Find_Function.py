@@ -31,3 +31,22 @@ Use a for loop with an index variable and a range.
 Inside the loop use an if statement. This function 
 can be written in about four lines of code.
 '''
+
+
+def find(a, b):
+    for i in range(len(a)):
+        if a[i] == b:
+            print("Found", b, "at position", i)
+
+
+list = [36, 31, 79, 96, 36, 91, 77, 33, 19, 3, 34, 12, 70, 12, 54, 98, 86, 11, 17, 17]
+
+
+def main():
+    find(list, 12)
+    find(list, 91)
+    find(list, 80)
+
+
+if __name__ == "__main__":
+    main()

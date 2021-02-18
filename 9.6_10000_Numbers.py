@@ -20,8 +20,18 @@ OUTPUT
 [2,5,1,6,3] #something like this 
 '''
 
+import random
 
 
+def create_list(x):
+    z = []
+    for i in range(x):
+        z.append(random.randint(1, 6))
+    return z
+
+
+my_list = create_list(5)
+print(my_list)
 
 
 
