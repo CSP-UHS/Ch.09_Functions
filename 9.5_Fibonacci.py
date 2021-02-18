@@ -12,15 +12,13 @@ right-justified with commas.
 '''
 
 
-def fibonacci():
-    last = 1
-    last_last = 0
-    num = 1
-    for i in range(1, 101):
-        print(f"{num:>10,}")
-        num = last+last_last
-        last_last = last
-        last = num
+def fibonacci(max):
+    x, y, num = 1, 0, 1
+    for i in range(max+1):
+        print(f"{num:>30,}")
+        num = x + y
+        y = x
+        x = num
 
 
-fibonacci()
+fibonacci(100)

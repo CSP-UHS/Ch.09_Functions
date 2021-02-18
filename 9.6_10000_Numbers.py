@@ -79,6 +79,7 @@ OUTPUT
 2.0
 '''
 
+
 def average_list(lst):
     total = 0
     for each in lst:
