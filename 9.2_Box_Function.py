@@ -31,3 +31,7 @@ oooooooooo
 oooooooooo
 oooooooooo
 '''
+
+def box(height, width):
+    for i in range (h):
+        print ()
