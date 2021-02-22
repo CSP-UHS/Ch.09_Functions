@@ -16,7 +16,7 @@ print("Your number has been increased to", x)
 #2.) Correct the following code to print 1-10:
 
 def count_to_ten():
-    for i in range(1,11):
+    for i in range(1, 11):
         print(i)
 
 
@@ -25,6 +25,7 @@ count_to_ten()
 
 
 #3.) Correct the following code to sum the list:
+
 
 def sum_list(list):
     sum = 0
