@@ -40,7 +40,7 @@ def main():
     box(3,5)
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     main()
 
 
