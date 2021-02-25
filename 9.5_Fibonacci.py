@@ -14,14 +14,14 @@ right-justified with commas.
 list = [1]
 
 
-def fibonacci(a):
-    if a <= 100:
-        b = a
-    else:
-        b = 100
-    while len(list) < b:
-        list.append(list[-1] + list[-2])
-    print(list)
+# def fibonacci(a):                     <--- ignore this
+#     if a <= 100:
+#         b = a
+#     else:
+#         b = 100
+#     while len(list) < b:
+#         list.append(list[-1] + list[-2])
+#     print(list)
 
 
 def fibi(num):
