@@ -1,9 +1,9 @@
-list=[1,1]
+def count_list(my_list,key):
+    x=0
+    for i in range(len(my_list)):
+        if my_list[i]==key:
+            x+=1
+    print("Found",key,x,"times")
 
-i=5
-
-while i>2:
-    x=list[-1]+list[-2]
-    list.append(x)
-    print(fx)
-    i-=1
+my_list = [1, 2, 3, 3, 3, 4, 2, 1]
+count_list(my_list, 3)
