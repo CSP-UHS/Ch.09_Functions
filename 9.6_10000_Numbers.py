@@ -76,13 +76,12 @@ OUTPUT
 2.0
 '''
 
-
 def average_list(my_list):
-    my_list = [1, 2, 3]
-    x=0
-    for i in range(len(my_list)):
-        x+=i
-    print(x)
+    sum=0
+    for i in my_list:
+        sum+=i
+        average=sum/len(my_list)
+    print(average)
 
 my_list = [1, 2, 3]
 avg = average_list(my_list)
