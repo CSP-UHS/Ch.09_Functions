@@ -1,9 +1,7 @@
-def count_list(my_list,key):
-    x=0
-    for i in range(len(my_list)):
-        if my_list[i]==key:
-            x+=1
-    print("Found",key,x,"times")
+import random
+x=5
+while x>0:
+    x-=1
+    num=random.randrange(0,7)
+    print(num)
 
-my_list = [1, 2, 3, 3, 3, 4, 2, 1]
-count_list(my_list, 3)

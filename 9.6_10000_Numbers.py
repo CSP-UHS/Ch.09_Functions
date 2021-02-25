@@ -19,8 +19,16 @@ OUTPUT
 ------
 [2,5,1,6,3] #something like this 
 '''
-c
+import random
+def create_list(x):
+    while x>0:
+        x-=1
+        num=random.randrange(0,7)
+        my_list.append(num)
 
+my_list=[]
+create_list(5)
+print(my_list)
 
 '''
 Function #2: Write a function called count_list that takes
