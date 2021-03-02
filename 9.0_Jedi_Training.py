@@ -44,6 +44,7 @@ def count_to_ten():
     for i in range(1, 11):
         print(i)
 
+
 count_to_ten()
 
 # 3.) Correct the following code to sum the list:
@@ -108,6 +109,7 @@ print(reverse(text))
 #
 # user_command = get_user_choice()
 # print("You entered:", user_command)
+
 
 def get_user_choice():
     global command

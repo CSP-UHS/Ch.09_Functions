@@ -30,8 +30,8 @@ def create_list(x):
     return z
 
 
-my_list = create_list(5)
-print(my_list)
+# my_list = create_list(5)
+# print(my_list)
 
 
 
@@ -54,8 +54,17 @@ OUTPUT
 '''
 
 
+def count_list(x, a):
+    total = 0
+    for i in x:
+        if i == a:
+            total += 1
+    return total
 
 
+# my_list = [1, 2, 3, 3, 3, 4, 2, 1]
+# count = count_list(my_list, 3)
+# print(count)
 
 '''
 Function #3: Write a function called average_list that returns the 
@@ -75,7 +84,16 @@ OUTPUT
 '''
 
 
+def average_list(x):
+    total = 0
+    for i in x:
+        total += i/len(x)
+    return total
 
+
+# my_list = [1, 2, 3]
+# avg = average_list(my_list)
+# print(avg)
 
 
 
@@ -90,5 +108,14 @@ Now that the functions have been created, use them all in a main program that wi
 '''
 
 
+def main():
+    x = create_list(10000)
+    for i in range(1, 7):
+        z = count_list(x, i)
+        print("The integer \"" + str(i) + "\" occurs", z, "times in this list.")
+    av = average_list(x)
+    print("The average of this list is", str(av) + ".")
 
 
+if __name__ == "__main__":
+    main()
