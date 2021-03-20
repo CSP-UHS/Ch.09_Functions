@@ -97,8 +97,6 @@ def move(delta_time):
             print("big")
 
 
-
-
 # The main function where we set background color, start and finish rendering and run.
 def main():
     arcade.open_window(600, 600, "BB8")
@@ -113,5 +111,7 @@ def main():
         arcade.schedule(move, 1/20)
     arcade.run()
 # Calls the main function
-if __name__=="__main__":
+
+
+if __name__ == "__main__":
     main()
