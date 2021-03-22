@@ -11,15 +11,18 @@ multiple times. We pass three parameters to it: x, y and radius. Write the code 
 the draw_BB8() function so that the resulting picture looks as close as you can get
 it to the one on the website.
 '''
-
-# Imports arcade module
 import arcade
+# Imports arcade module
 
-# Opens a 600px by 600px window and puts BB8 in the title
-arcade.open_window(600, 600, "BB8")
+
+arcade.open_window(600, 600, "BB8")  # Opens a 600px by 600px window and puts BB8 in the title
 
 # Function to draw BB8 robots
 def draw_BB8(x,y, radius):
+    """draw body"""
+    arcade.draw_circle_filled(x, y, radius, arcade.color.WHITE)
+    arcade.draw_circle_outline(x, y, radius, arcade.color.BLACK,3)
+
   
 
 # The main function where we set background color, start and finish rendering and run.
@@ -27,14 +30,21 @@ def main():
     arcade.set_background_color(arcade.color.WHEAT)
     arcade.start_render()
 
-    draw_BB8(100,50,50)
-    draw_BB8(300, 300, 30)
-    draw_BB8(500, 100, 20)
-    draw_BB8(500, 400, 60)
-    draw_BB8(120, 500, 15)
+    rcade.draw_circle_filled(x, y, radius, arcade.color.WHITE)
+    arcade.draw_circle_outline(x, y, radius, arcade.color.BLACK, 3)
 
-    arcade.finish_render()
-    arcade.run()
+    arcade.draw_circle_filled(x, y, radius / 1.5, arcade.color.ORANGE)
+    arcade.draw_circle_outline(x, y, radius / 1.5, arcade.color.BLACK, 3)
+
+    arcade.draw_circle_filled(x, y, radius / 3, arcade.color.LIGHT_STEEL_BLUE)
+    arcade.draw_circle_outline(x, y, radius / 3, arcade.color.BLACK, 3)
+
+    arcade.draw_arc_filled(x, y + radius * .9, radius * 1.2, radius * 1.3, arcade.color.WHITE, 0, 180, )
+    arcade.draw_arc_outline(x, y + radius * .9, radius * 1.2, radius * 1.3, arcade.color.BLACK, 0, 180, 6)
+    arcade.draw_rectangle_filled(x, y + radius * .9, radius * 1.2, 3, arcade.color.BLACK)
+
+    arcade.draw_circle_filled(x, y + radius * 1.2, radius / 5, arcade.color.BLUE_GRAY)
+    arcade.draw_circle_outline(x, y + radius * 1.2, radius / 5, arcade.color.BLACK, 3)
 
 # Calls the main function
 if __name__=="__main__":

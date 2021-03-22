@@ -1,4 +1,4 @@
-#Sign your name:________________
+#Sign your name:________ethan januszewski________
 
 
 #1.) Correct the following code: (The user's number should be increased by 1 and printed.)
@@ -55,7 +55,7 @@ print(reverse(text))
 def get_user_choice():
     while True:
         command = input("Command: ")
-        if command = f or command = m or command = s or command = d or command = q:
+        if command.lower() == "f" or command.lower() == "m" or command.lower() == "s" or command.lower() == "d" or command.lower() == "q":
             return command
  
         print("Hey, that's not a command. Here are your options:" )
