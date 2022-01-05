@@ -1,25 +1,25 @@
-#Sign your name:________________
+#Sign your name:Denis Toric
 
 
 #1.) Correct the following code: (The user's number should be increased by 1 and printed.)
-
+'''
 def increase(x):
-    return x + 1
- 
+    x+=1
+    return x
+
 num = input("Enter a number: ")
 increase(x)
 print("Your number has been increased to", x)
                         
  
-
-
+'''
 #2.) Correct the following code to print 1-10:
 
-def count_to_ten:
-    for i in range[10]:
+def count_to_ten(1,10):
+    for i in range[1]:
         print(i)
  
-count_to_ten()
+count_to_ten(10)
 
 
 
@@ -68,3 +68,4 @@ def get_user_choice():
 user_command = get_user_choice()
 print("You entered:", user_command)
 
+'''

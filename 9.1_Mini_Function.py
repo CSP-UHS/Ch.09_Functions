@@ -26,3 +26,6 @@ The function should return the value, not print the value.
 Also, while there is a min function built into Python, don't use it. 
 Please use if statements and practice creating it yourself.
 '''
+def mini(a,b,c):
+
+    return mini
