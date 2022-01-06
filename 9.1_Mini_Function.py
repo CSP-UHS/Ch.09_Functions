@@ -27,14 +27,11 @@ Also, while there is a min function built into Python, don't use it.
 Please use if statements and practice creating it yourself.
 '''
 import random
-def mini():
-    first_number=float(input("Enter a number"))
-    second_number=float(input("Enter another number"))
-    third_number=float(input("Enter a final number"))
-    if first_number<second_number and first_number<third_number:
-        print(first_number)
-    if second_number<first_number and second_number<third_number:
-        print(second_number)
-    if third_number<first_number and third_number<second_number:
-        print(third_number)
-mini()
+def mini(x,y,z):
+    if x <= y and x <= z:
+        return x
+    if y <= x and y <= z:
+        return y
+    if z <= x and z <= y:
+        return z
+print(mini(2,3,5))
