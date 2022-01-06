@@ -31,3 +31,7 @@ oooooooooo
 oooooooooo
 oooooooooo
 '''
+def box(x,y):
+    for i in range(x):
+        print("o"*y)
+box(7,5)
