@@ -26,3 +26,15 @@ The function should return the value, not print the value.
 Also, while there is a min function built into Python, don't use it. 
 Please use if statements and practice creating it yourself.
 '''
+import random
+def mini():
+    first_number=float(input("Enter a number"))
+    second_number=float(input("Enter another number"))
+    third_number=float(input("Enter a final number"))
+    if first_number<second_number and first_number<third_number:
+        print(first_number)
+    if second_number<first_number and second_number<third_number:
+        print(second_number)
+    if third_number<first_number and third_number<second_number:
+        print(third_number)
+mini()
