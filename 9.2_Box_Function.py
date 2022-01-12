@@ -31,3 +31,12 @@ oooooooooo
 oooooooooo
 oooooooooo
 '''
+def box(x, y):
+    width = y*"o"
+    for i in range(x):
+        print(width)
+box(7,5)
+print()
+box(3,2)
+print()
+box(3,10)
