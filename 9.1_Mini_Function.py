@@ -27,5 +27,17 @@ Also, while there is a min function built into Python, don't use it.
 Please use if statements and practice creating it yourself.
 '''
 def mini(a,b,c):
-
+    if a<=b and a<=c:
+        return a
+    elif b<=a and b<=c:
+        return b
+    else:
+        return c
     return mini
+
+
+print(mini(7, 3, 5))
+print(mini(5, 5, 4))
+print(mini(2, 2, 3))
+print(mini(-2, -6, -100))
+print(mini("Z", "B", "A"))

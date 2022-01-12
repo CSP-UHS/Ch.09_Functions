@@ -2,16 +2,16 @@
 
 
 #1.) Correct the following code: (The user's number should be increased by 1 and printed.)
-'''
+
 def increase(x):
     return x+1
 
-num = int(input("Enter a number: ")
+num = int(input("Enter a number: "))
 newnum=increase(num)
 print("Your number has been increased to",newnum)
                         
  
-'''
+
 #2.) Correct the following code to print 1-10:
 
 def count_to_ten():
@@ -68,4 +68,3 @@ def get_user_choice():
 user_command = get_user_choice()
 print("You entered:", user_command)
 
-'''
