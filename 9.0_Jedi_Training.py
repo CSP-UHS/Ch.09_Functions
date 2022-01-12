@@ -1,46 +1,70 @@
-'''
-MINI FUNCTION
-------------
-Write a function called mini that will take three numbers as parameters 
-and return the smallest value. If more than one number is tied for smallest, 
-still return that smallest number. Once you've finished writing your function, 
-copy/paste the following code and make sure that it runs correctly with the function you created:
+#Sign your name:Joseph JArman
 
-INPUT
------
-print(mini(7, 3, 5))
-print(mini(5, 5, 4))
-print(mini(2, 2, 3))
-print(mini(-2, -6, -100))
-print(mini("Z", "B", "A"))
+#1.) Correct the following code: (The user's number should be increased by 1 and printed.)
 
-OUTPUT
-------
-3
-4
-2
--100
-A
+def increase(x):
+    return x + 1
+ 
+num = int(input("Enter a number: "))
+x =increase(num)
+print("Your number has been increased to", x)
+                        
+ 
 
-The function should return the value, not print the value. 
-Also, while there is a min function built into Python, don't use it. 
-Please use if statements and practice creating it yourself.
-'''
 
-def mini(a, b, c):
-	if a <= b and a <= c:
-		return a
-	elif b <= a and b <= c:
-		return b
-	else:
-		return c
+#2.) Correct the following code to print 1-10:
 
-def main():
-	print(mini(7, 3, 5))
-	print(mini(5, 5, 4))
-	print(mini(2, 2, 3))
-	print(mini(-2, -6, -100))
-	print(mini("Z", "B", "A"))
+def count_to_ten():
+    for i in range(1, 10+1):
+        print(i)
+ 
+count_to_ten()
 
-if __name__ == "__main__":
-	main()
+
+
+#3.) Correct the following code to sum the list:
+
+def sum_list(list):
+    sum = 0
+    for i in list:
+        sum += i
+    return sum
+ 
+list = [45, 2, 10, -5, 100]
+print(sum_list(list))
+
+
+
+
+#4.) Correct the following code which should reverse the sentence that is entered.
+
+def reverse(text):
+    result = ""
+    text_length = len(text)
+    for i in range(1, text_length+1):
+        result = result + text[i * -1]
+    return result
+ 
+text = input("Enter a sentence: ")
+print(reverse(text))
+
+
+
+#5.) Correct the following code: (if one of the options is not entered it should print the statements)
+
+def get_user_choice():
+    while True:
+        command = input("Command: ")
+        if command == "f" or command == "m" or command == "s" or command == "d" or command == "q":
+            return command
+ 
+        print("Hey, that's not a command. Here are your options:" )
+        print("f - Full speed ahead")
+        print("m - Moderate speed")
+        print("s - Status")
+        print("d - Drink")
+        print("q - Quit")
+ 
+user_command = get_user_choice()
+print("You entered:", user_command)
+
