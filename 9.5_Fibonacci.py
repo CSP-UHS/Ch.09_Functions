@@ -10,3 +10,19 @@ in the Fibonacci sequence. Pass the number into the function.
 Just to do a quick review of text formatting in the last chapter, make the list of numbers
 right-justified with commas.
 '''
+def Fibonacci():
+    b=1
+    a=0
+    sum=a+b
+    n=1
+    x=11
+    for i in range(99):
+        print(sum)
+        a=b
+        b=sum
+        sum=a+b
+def myprogram():
+    Fibonacci()
+if __name__=="__main__":
+    myprogram()
+

@@ -40,13 +40,13 @@
 #4.) Correct the following code which should reverse the sentence that is entered.
 
 def reverse(text):
-    result = ""
+    result = " "
     text_length = len(text)
-    for i in range(text_length):
+    for i in range(1,len(text) + 1):
         result = result + text[i * -1]
     return result
 
-text = input("Enter a sentence: ")
+text = str(input("Enter a sentence: "))
 print(reverse(text))
 
 

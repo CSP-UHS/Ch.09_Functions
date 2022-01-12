@@ -34,4 +34,11 @@ def mini(x,y,z):
         return y
     if z <= x and z <= y:
         return z
-print(mini(2,3,5))
+def myprogram():
+    print(mini(7, 3, 5))
+    print(mini(5, 5, 4))
+    print(mini(2, 2, 3))
+    print(mini(-2, -6, -100))
+    print(mini("Z", "B", "A"))
+if __name__ == "__main__":
+    myprogram()
