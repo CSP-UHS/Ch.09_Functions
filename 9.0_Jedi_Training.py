@@ -1,24 +1,25 @@
-#Sign your name:________________
+#Sign your name: Matthew Flyr
 
 
 #1.) Correct the following code: (The user's number should be increased by 1 and printed.)
 
 def increase(x):
     return x + 1
- 
-num = input("Enter a number: ")
-increase(x)
+
+num = int(input("Enter a number: "))
+increase(num)
+x = increase(num)
 print("Your number has been increased to", x)
                         
  
 
-
 #2.) Correct the following code to print 1-10:
 
-def count_to_ten:
-    for i in range[10]:
-        print(i)
- 
+def count_to_ten():
+    for x in range(1, 10+1):
+        print(x)
+
+
 count_to_ten()
 
 
@@ -26,10 +27,11 @@ count_to_ten()
 #3.) Correct the following code to sum the list:
 
 def sum_list(list):
+    sum = 0
     for i in list:
-        sum = i
-        return sum
- 
+        sum += i
+    return sum
+
 list = [45, 2, 10, -5, 100]
 print(sum_list(list))
 
@@ -41,7 +43,7 @@ print(sum_list(list))
 def reverse(text):
     result = ""
     text_length = len(text)
-    for i in range(text_length):
+    for i in range(1, text_length+1):
         result = result + text[i * -1]
     return result
  
@@ -55,7 +57,7 @@ print(reverse(text))
 def get_user_choice():
     while True:
         command = input("Command: ")
-        if command = f or command = m or command = s or command = d or command = q:
+        if command == "f" or command == "m" or command == "s" or command == "d" or command == "q":
             return command
  
         print("Hey, that's not a command. Here are your options:" )
