@@ -17,7 +17,7 @@ def Fibonacci():
     n=1
     x=11
     for i in range(99):
-        print(sum)
+        print(f"{sum:50,}")
         a=b
         b=sum
         sum=a+b
