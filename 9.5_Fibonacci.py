@@ -10,3 +10,24 @@ in the Fibonacci sequence. Pass the number into the function.
 Just to do a quick review of text formatting in the last chapter, make the list of numbers
 right-justified with commas.
 '''
+a = 0
+b = 1
+
+def fibo(x):
+    a,b = 0,1
+    print(f"{a:50,}")
+    print(f"{b:50,}")
+    for i in range(x-2):
+        c=a+b
+        print(f"{c:50,}")
+        a=b
+        b=c
+
+
+def main():
+    fibo(1000)
+
+
+
+if __name__ == "__main__":
+    main()
