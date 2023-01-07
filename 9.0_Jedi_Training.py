@@ -59,15 +59,29 @@
 def get_user_choice():
     while True:
         command = input("Command: ")
-        if command = f or command = m or command = s or command = d or command = q:
+        if command == "f":
+            print("f - Full speed ahead")
+            return command
+        elif command == "m":
+            print("m - Moderate speed")
+            return command
+        elif command == "s":
+            print("s - Status")
+            return command
+        elif command == "d":
+            print("d - Drink")
+            return command
+        elif command == "q":
+            print("q - Quit")
+            return command
+        else:
+            print("Hey, that's not a command. Here are your options:" )
             return command
 
-        print("Hey, that's not a command. Here are your options:" )
-        print("f - Full speed ahead")
-        print("m - Moderate speed")
-        print("s - Status")
-        print("d - Drink")
-        print("q - Quit")
+
+
+
+
 
 user_command = get_user_choice()
 print("You entered:", user_command)
