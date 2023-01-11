@@ -38,4 +38,12 @@ def mini(x,y,z):
     else:
         return thirdNum
 
-print(mini("Z","B","A"))
+def main():
+    print(mini(7, 3, 5))
+    print(mini(5, 5, 4))
+    print(mini(2, 2, 3))
+    print(mini(-2, -6, -100))
+    print(mini("Z", "B", "A"))
+
+if __name__ == "__main__":
+    main()
