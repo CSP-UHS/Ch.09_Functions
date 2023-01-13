@@ -12,4 +12,6 @@ right-justified with commas.
 '''
 
 def fibonacci():
+    x = 1
     for i in range(100):
+
