@@ -10,3 +10,15 @@ in the Fibonacci sequence. Pass the number into the function.
 Just to do a quick review of text formatting in the last chapter, make the list of numbers
 right-justified with commas.
 '''
+
+def fibonacci(max):
+    currNumber = 1
+    prevNumber = 0
+    for i in range(max):
+        print(currNumber)
+        currNumberCopy = currNumber
+        currNumber += prevNumber
+        prevNumber = currNumberCopy
+
+
+fibonacci(10)

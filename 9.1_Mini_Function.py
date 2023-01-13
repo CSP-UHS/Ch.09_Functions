@@ -26,3 +26,19 @@ The function should return the value, not print the value.
 Also, while there is a min function built into Python, don't use it. 
 Please use if statements and practice creating it yourself.
 '''
+
+def mini(a, b, c):
+    isStrings = type(a) == str and type(b) == str and type(c) == str
+
+    if isStrings:
+        a, b, c = ord(a), ord(b), ord(c)
+
+    smallestNum = min(a,b,c)
+
+    return isStrings and chr(smallestNum) or smallestNum
+
+print(mini(7, 3, 5))
+print(mini(5, 5, 4))
+print(mini(2, 2, 3))
+print(mini(-2, -6, -100))
+print(mini("Z", "B", "A"))
