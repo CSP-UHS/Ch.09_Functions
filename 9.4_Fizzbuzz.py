@@ -34,3 +34,9 @@ fizzbuzz
 
 The classic test is to use the numbers 1-100 so make sure you test that with your function.
 '''
+
+def fizzbuzz(max):
+    for n in range(1, max + 1):
+        print((((n % 3 == 0) and "fizz" or "") + ((n % 5 == 0) and "buzz" or "")) or n)
+
+fizzbuzz(15)
