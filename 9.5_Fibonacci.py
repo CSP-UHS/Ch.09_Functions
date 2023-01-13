@@ -11,7 +11,10 @@ Just to do a quick review of text formatting in the last chapter, make the list 
 right-justified with commas.
 '''
 
-def fibonacci():
+def fibonacci(n):
+    y = 1
     x = 1
-    for i in range(100):
+    for i in range(n - 2):
 
+
+fibonacci(100)
