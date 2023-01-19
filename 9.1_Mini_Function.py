@@ -8,6 +8,31 @@ copy/paste the following code and make sure that it runs correctly with the func
 
 INPUT
 -----
+'''
+def mini(x,y,z):
+    # if x<y and x<z or x<y and x==z or x<z and x==y:
+    #     print(x)
+    # elif y<x and y<z or y<x and y==z or y<z and y==x:
+    #     print(y)
+    # elif z<x and z<y or z<x and z==y or z<y and z==x:
+    #     print(z)
+    if x <= y and x <= z:
+        return x
+    elif y <= x and y <= z:
+        return y
+    else:
+        return z
+
+print(mini(7, 3, 5))
+print(mini(5, 5, 4))
+print(mini(2, 2, 3))
+print(mini(-2, -6, -100))
+print(mini("Z", "B", "A"))
+
+
+
+'''
+
 print(mini(7, 3, 5))
 print(mini(5, 5, 4))
 print(mini(2, 2, 3))
