@@ -4,11 +4,11 @@
 #1.) Correct the following code: (The user's number should be increased by 1 and printed.)
 
 def increase(x):
-    sum = x + 1
-    print("Your number has been increased to", sum)
+    return x + 1
 
-x = int(input("Enter a number: "))
-x = increase(x)
+num = int(input("Enter a number: "))
+n = increase(num)
+print("Your number has been increased to", n)
 
 
 #
