@@ -16,8 +16,8 @@ def fibonacci():
     x = 1
     y = 1
     for i in range(10):
-        print(f"{'':>10}{x:,}")
-        print(f"{'':>10}{y:,}")
+        print(f"{x:20,}")
+        print(f"{y:20,}")
 
         x+=y
         y+=x
