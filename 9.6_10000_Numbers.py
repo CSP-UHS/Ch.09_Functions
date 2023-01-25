@@ -1,4 +1,5 @@
-'''
+import random
+"""
 10,000 NUMBERS
 --------------
 
@@ -17,13 +18,29 @@ print(my_list)
 
 OUTPUT
 ------
-[2,5,1,6,3] #something like this 
-'''
+[2,5,1,6,3] #something like this
+"""
 
 
+def create_list(x):
+    list = []
+    for i in range(x):
+        list.append(random.randint(1, 6))
+    return list
 
 
-
+# my_list = create_list(5)
+# print(my_list)
+# YAHTZEE code (comment the two lines above if bottom code is used)
+# roll = 0
+# while True:
+#     my_list = create_list(5)
+#     if my_list[0] == my_list[1] == my_list[2] == my_list[3] == my_list[4]:
+#         print(roll, "YAHTZEE")
+#         break
+#     roll += 1
+# -------
+# my_list = create_list(x)
 
 '''
 Function #2: Write a function called count_list that takes
@@ -44,9 +61,19 @@ OUTPUT
 '''
 
 
-
-
-
+def count_list(list, x):
+    count = 0
+    for item in list:
+        if item == x:
+            count += 1
+        else:
+            pass
+    return count
+#
+#
+# my_list = [1, 2, 3, 3, 3, 4, 2, 1]
+# count = count_list(my_list, 3)
+# print(count)
 '''
 Function #3: Write a function called average_list that returns the 
 average of the list passed into it. Once you've finished writing your
@@ -65,13 +92,16 @@ OUTPUT
 '''
 
 
+def average_list(list):
+    sum = 0
+    for item in list:
+        sum += item
+    return sum/len(list)
 
 
-
-
-
-
-
+# my_list = [1, 2, 3]
+# avg = average_list(my_list)
+# print(avg)
 '''
 Now that the functions have been created, use them all in a main program that will:
 1.) Create a list of 10,000 random numbers from 1 to 6. (1 line of code)
@@ -80,5 +110,13 @@ Now that the functions have been created, use them all in a main program that wi
 '''
 
 
+def main():
+    list = create_list(10000)
+    for i in range(1, 7):
+        print("There are", count_list(list, i), "amount of", i, "s")
+    average = average_list(list)
+    print(average)
 
 
+if __name__ == "__main__":
+    main()

@@ -1,8 +1,8 @@
-'''
+"""
 BOX_FUNCTION
 ------------
-Write a function called box that will output boxes (made of lower case o's) 
-given a height and width. Once you've finished writing your function, copy 
+Write a function called box that will output boxes (made of lower case o's)
+given a height and width. Once you've finished writing your function, copy
 and paste the following code after it and make sure it works with the function you wrote:
 
 INPUT
@@ -30,4 +30,16 @@ oo
 oooooooooo
 oooooooooo
 oooooooooo
-'''
+"""
+
+
+def box(height, across):
+    for i in range(height):
+        print("o" * across)
+
+
+box(7, 5)
+print()
+box(3, 2)
+print()
+box(3, 10)
