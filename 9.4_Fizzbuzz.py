@@ -34,3 +34,20 @@ fizzbuzz
 
 The classic test is to use the numbers 1-100 so make sure you test that with your function.
 '''
+
+def Fizzbuzz(x):
+    for count in range(1,16):
+        if count % 3==0 and not count % 5==0:
+            print("fizz")
+        elif count % 5==0 and not count % 3==0:
+            print("buzz")
+        elif count % 3==0 and count % 5==0:
+            print("fizzbuzz")
+        else:
+            print(count)
+
+
+
+
+
+Fizzbuzz(15)
